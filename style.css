@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+body {
+width: 100%;
+background-color: antiquewhite;
+}
+
+#navlink{
+    display: flex;
+    position: sticky;
+    padding: .5rem;
+    width: 100%;
+    background-color: rgba(216, 219, 218, 0.542);
+    box-shadow: 5px 5px 20px 10px  rgba(77, 100, 100, 0.627);
+}
+
+#navlink img{
+    width: 60px;
+    margin-top: 4px;
+}
+
+#navlink p{
+    padding-left: 10px;
+    margin-top: 17px;
+    color:  rgba(77, 100, 100, 0.627);
+    font-family: "Playwrite CU", cursive;
+    font-size: 10px;
+}
+
+#navlink ul{
+    display: flex;
+    width: 100%;
+    justify-content:right;
+    margin: 25px;
+    padding-right: 20px;
+}
+
+#navlink li{
+    list-style: none;
+    padding-left: 25px;
+}
+
+#navlink a{
+    color: black;
+    text-decoration: none;
+}
+
+#navlink a:hover{
+    color: rgba(77, 100, 100, 0.627);
+    font-size: 18px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  padding: .5rem;
+    background-color: rgba(148, 9, 9, 0.381);
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+#navbar a:hover{
+    color:rgba(77, 100, 100, 0.627) ;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(77, 100, 100, 0.627);
+}
+
+#flex{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+    padding: 3.5rem;
+    gap: 10px; 
+}
+
+.card{
+    position: relative;
+}
+
+.card img{
+width:100%; 
+border-radius: 50px;
+}
+
+.card p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(240, 248, 255, 0.537);
+    width: 100%;
+    padding: .2rem;
+    text-align: center;
+}
+
+.card p:hover{
+    font-size: 30px;
+}
+
+#footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    height: 60px;
+}
+
+#footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+    border-bottom:1px solid white;  
+}
+
+#footer a:hover{
+    font-size: 18px;
+    color: rgba(77, 100, 100, 0.855);
+    border-bottom: 1px solid rgba(77, 100, 100, 0.627);
+}
+
+#footer li{
+    list-style: none;
+}
+
+.footlink{
+width: 100%;
+background-color: black;
+}
+
+.footlink ul{
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.footlink li{
+    list-style: none;
+}
+
+.footlink a{
+    padding: 20px;
+    color: white;
+}
+
+.footlink a:hover{
+    color: rgba(77, 100, 100, 0.627);
+font-size: 20px;
+}
+
+.footlink p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 5px;
+}
+
+@media screen and (width < 768px) {
+    #flex{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+    
+
+    
